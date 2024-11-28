@@ -312,6 +312,7 @@ int main() {
     while (cin>>parola) {
 
        cout<<checkPassword(parola, cerinte)<<endl;
+       cout<<"asta s-a modificat"
     }
 
     return 0;
