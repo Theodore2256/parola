@@ -51,7 +51,7 @@ int main() {
 //    }
 
     transform(cuvinte2.begin(),  cuvinte2.end(), cuvinte2.begin(), ::tolower);
-
+    
     for(auto it:cuvinte2)
         cout<<(it)<<" ";
 
