@@ -1,16 +1,20 @@
 #include <iostream>
-#include <string.h>
 #include <ctype.h>
 #include <set>
 #include <vector>
 
 using namespace std;
 
+string toLower(const string &s) {
+    string result = s;
+    transform(result.begin(), result.end(), result.begin(), ::tolower);
+    return result;
+}
 
 int main() {
 
-  string litere;
-  cin>>litere;
+    string litere;
+    cin>>litere;
 //  vector<string>factor;
     set<string>cuvinte;
     set<string>cuvinte2;
@@ -21,36 +25,23 @@ int main() {
 //    }
     while (cin>>buffer)
     {
+         buffer=toLower(buffer);
         cuvinte.insert(buffer);
     }
 
     for(auto it:cuvinte)
     {
-       int k=0;
-            for(auto it3:litere)
-            {
-                if(std::count(it.begin(), it.end(),it3))
+        int k=0;
+        for(auto it3:litere)
+        {
+            if(std::count(it.begin(), it.end(),it3))
 
-                    k++;
-            }
-            if(k==litere.size())
-                cuvinte2.insert(it);
-//                cout << tolower(static_cast<int>(it)) << " ";
+                k++;
+        }
+        if(k==litere.size())
+            cuvinte2.insert(it);
 
     }
-
-//    for (int i = 0; i < factor.size(); ++i)
-//    {
-//        for (auto it2:factor[i])
-//        {
-//            for (auto it: litere) {
-//                if (it ==it2 || it2== toupper(it2))
-//                    cuvinte.insert(factor[i]);
-//            }
-//        }
-//    }
-
-    transform(cuvinte2.begin(),  cuvinte2.end(), cuvinte2.begin(), ::tolower);
     
     for(auto it:cuvinte2)
         cout<<(it)<<" ";
