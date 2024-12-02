@@ -1,3 +1,3 @@
-/Users/stefan/parola /cmake-build-debug/CMakeFiles/parola_.dir
-/Users/stefan/parola /cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/stefan/parola /cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/stefan/clion/parola /cmake-build-debug/CMakeFiles/parola_.dir
+/Users/stefan/clion/parola /cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stefan/clion/parola /cmake-build-debug/CMakeFiles/rebuild_cache.dir

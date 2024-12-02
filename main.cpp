@@ -13,6 +13,7 @@ int main() {
   cin>>litere;
 //  vector<string>factor;
     set<string>cuvinte;
+    set<string>cuvinte2;
     string buffer;
 //    while (cin>>buffer)
 //    {
@@ -33,7 +34,8 @@ int main() {
                     k++;
             }
             if(k==litere.size())
-                cout<<tolower(it)<<" ";
+                cuvinte2.insert(it);
+//                cout << tolower(static_cast<int>(it)) << " ";
 
     }
 
@@ -48,8 +50,10 @@ int main() {
 //        }
 //    }
 
-//    for(auto it:cuvinte)
-//        cout<<(it)<<" ";
+    transform(cuvinte2.begin(),  cuvinte2.end(), cuvinte2.begin(), ::tolower);
+
+    for(auto it:cuvinte2)
+        cout<<(it)<<" ";
 
     return 0;
 }
