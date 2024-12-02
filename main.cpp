@@ -42,7 +42,7 @@ int main() {
             cuvinte2.insert(it);
 
     }
-    
+     
     for(auto it:cuvinte2)
         cout<<(it)<<" ";
 
