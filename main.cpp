@@ -34,7 +34,8 @@ int main() {
         int k=0;
         for(auto it3:litere)
         {
-            if(std::count(it.begin(), it.end(),it3))
+//            if(std::count(it.begin(), it.end(),it3))
+            if(it.find(it3)==2)
 
                 k++;
         }
@@ -42,7 +43,7 @@ int main() {
             cuvinte2.insert(it);
 
     }
-     
+
     for(auto it:cuvinte2)
         cout<<(it)<<" ";
 
