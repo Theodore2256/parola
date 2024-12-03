@@ -35,7 +35,7 @@ int main() {
         for(auto it3:litere)
         {
 //            if(std::count(it.begin(), it.end(),it3))
-            if(it.find(it3)==2)
+            if(it.find(it3)==1)
 
                 k++;
         }
